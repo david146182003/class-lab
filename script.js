@@ -39,3 +39,26 @@ for (let i = 1; i < table.length; i++) {
 
 console.log(objArr)
 
+//Part 4: Sorting and Manipulating Data
+
+//1. Remove the last element from the sorted array.
+objArr.pop()
+console.log(objArr) 
+
+//2. Insert the following object at index 1:
+let obj1 ={ id: "48", name: "Barry", occupation: "Runner", age: "25" }
+objArr.splice(1, 0 , obj1)
+
+console.log(objArr)
+//3. Add the following object to the end of the array:
+let obj2 = { id: "7", name: "Bilbo", occupation: "None", age: "111" }
+objArr.push(obj2)
+console.log(objArr)
+
+
+let totalAge = 0
+for(let i=0; i<objArr.length;i++){
+    totalAge += parseInt(objArr[i].age)
+}
+let aveAge = totalAge / objArr.length
+console.log(aveAge)
